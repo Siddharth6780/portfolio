@@ -1,26 +1,59 @@
 body{
     background-color: #363636;
     font-family: monospace, "Courier New", Consolas;
+    margin: 0%;
+    padding: 0%;
+    letter-spacing: 0.1rem;
+    overflow-x: hidden;
 }
 #navbar{
-   margin: 20px;
-   height: 100px;
+   width: 100%;
+   height: 7vw;
    display: flex;
+   background-color:transparent;
+   text-align: center;
+}
+.cursor{
+    display: inline-block;
+    width: 0.3vw;
+    background-color: #fa945a;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%{background-color: #e05b49;}
+    50%{background-color: transparent ;}
+    100%{background-color: #e05b49;}
+}
+/* .cursor.typing{
+    animation: none;
+} */
+.navbar_container{
+    margin-top: 0.3vw;
+    display: flex;
+    margin-left: 0.5vw;
+}
+.background_image{
+    width: 100%;
+    height: 55vw;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 .logo img{
-    height: 70px;
-    width: 70px;
+    height: 5vw;
+    width: 5.0vw;
     border-radius: 50%;
 }
 .list_items{
     display: flex;
-    font-size: 25px;
+    font-size: 1.6vw;
     list-style-type: none;
 }
 .list_items a{
-    margin-left: 25px;
-    padding: 10px;
-    border-radius: 25px;
+    margin-left: 1.5vw;
+    padding: 1vw;
+    border-radius: 2.1vw;
     color: #e05b49;
     text-decoration: none;
 }
@@ -32,93 +65,103 @@ body{
     justify-content: center;
     margin: auto;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
 }
 .greet{
-    font-size: 40px;
-    color:  #e05b49;
+    display: flex;
+    justify-content: center;
 }
 .content{
-    margin-top: 10px;
+    margin-top: 0.7vw;
     text-align: center;
     color:  #fa945a;
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 .intrest{
     text-align: center;
     color:  #fa945a;
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 #education{
-    margin-top: 20px;
-    height: 820px;
+    margin-top: 1.5vw;
+    height: 53vw;
     background-color: #222222;
 }
 .education_heading{
     text-align: center;
     color: #e05b49;
-    font-size: 40px;
-    margin-top: 30px;
+    font-size: 2.8vw;
+    margin-top: 1.6vw;
 }
 .collage{
     text-align: center;
     color: #e05b49;
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 .school{
     text-align: center;
     color: #e05b49;
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 .skills_container{
-    margin-left: 500px;
+    margin-top: 0vw;
+    display: flex;
+    justify-content: center;
 }
 .skills_heading{
     text-align: center;
     color: #e05b49;
-    font-size: 40px;
-    margin-top: 30px;   
+    font-size: 2.8vw;
+    margin-top: 2vw; 
+    margin-bottom: 0%;  
 }
 .skills_heading_skill{
     color: #e05b49;
-    font-size: 25px;
-    margin-top: 30px; 
+    font-size: 1.7vw;
+    margin-top: 1.5vw; 
 }
 .skills_content{
     color: #fa945a;
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 .container_para{
     text-align: center;
     color: #e05b49;
-    font-size: 40px;
-    margin-top: 30px;
+    font-size: 3vw;
+    margin-top: 3vw;
+    /* fo */
 }
 .project_name{
     text-align: center;
     color: #e05b49;
-    font-size: 40px;
+    font-size: 2.3vw;
 }
 #projects{
     display: flex;
+    position: relative;
+    width: 100%;
+}
+#projects:after{
+    content: "";
+    display: block;
 }
 .project_content{
-    width: 600px;
-    margin-left: 50px;
-    height: 400px;
+    width: 42vw;
+    margin-left: 3vw;
+    height: 26vw;
     border-radius: 2%;
-    padding: 10px;
-    border: 5px solid rgb(90, 90, 90);
+    padding: 1vw;
+    border: 0.5vw solid rgb(90, 90, 90);
     background-color: #222222;
 }
 .project_name_content{
     color: #fa945a;
-    font-size: 25px;   
+    font-size: 1.7vw;   
 }
 #footer{
-    height: 250px;
+    height: 18vw;
     background-color: #222222;
 }
 .sociallinks{
@@ -128,17 +171,20 @@ body{
 }
 .sociallinks a{
     text-decoration: none;
-    margin: 30px;
+    margin: 2vw;
+}
+.container{
+    margin-top: 0%;
 }
 .fa {
-    padding: 20px;
-    font-size: 10px;
+    padding: 1.6vw;
+    font-size: 1.6vw;
     border-radius: 50%;
-    height: 14px;
-    width: 14px;
+    height: 1vw;
+    width: 1vw;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 0.3vw 0.1vw;
   }
   .fa-facebook {
     background: #3B5998;
@@ -156,17 +202,23 @@ body{
     background: black;
     color: white;
   }
-.greet{
-    margin-left: 35%;
-    animation: type 3s;
-    overflow: hidden;
-    white-space: nowrap;
-}
-@keyframes type{
-    0%{
-        width:0ch;
-    }
-    100%{
-        width:17ch;
-    }
-}
+  .line-1{
+      color:  #e05b49;
+      border-right: 0.1vw solid #e05b49;
+      font-size: 2.5vw;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  .anim-typewriter{
+    animation: typewriter 2s steps(21) 1s 1 normal both,
+               blinkTextCursor 500ms steps(21) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 11em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color:#e05b49}
+    to {border-right-color: transparent;}
+  }
