@@ -8,10 +8,11 @@ body{
 }
 #navbar{
    width: 100%;
-   height: 7vw;
+   height: 4vw;
    display: flex;
    background-color:transparent;
    text-align: center;
+   display: inline-block;
 }
 .cursor{
     display: inline-block;
@@ -28,10 +29,21 @@ body{
 /* .cursor.typing{
     animation: none;
 } */
+#first_screen{
+    background: url(background.jpg) no-repeat center;
+    /* height: 100vh; */
+    background-size: 100% 50vw;
+    height: 50vw;
+    width: 100%;
+    display: inline-block;
+}
 .navbar_container{
     margin-top: 0.3vw;
     display: flex;
     margin-left: 0.5vw;
+    /* background-color: rgb(42, 42, 42); */
+    opacity: 0.8;
+    width: 100%;
 }
 .background_image{
     width: 100%;
@@ -41,20 +53,24 @@ body{
   color: white;
 }
 .logo img{
-    height: 5vw;
-    width: 5.0vw;
+    height: 3.5vw;
+    width: 3.5vw;
     border-radius: 50%;
+    margin-top: 0.5vw;
 }
 .list_items{
     display: flex;
-    font-size: 1.6vw;
     list-style-type: none;
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 .list_items a{
     margin-left: 1.5vw;
     padding: 1vw;
     border-radius: 2.1vw;
-    color: #e05b49;
+    color:white;
     text-decoration: none;
 }
 .list_items a:hover{
@@ -94,6 +110,8 @@ body{
     color: #e05b49;
     font-size: 2.8vw;
     margin-top: 1.6vw;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #474747;
 }
 .collage{
     text-align: center;
@@ -116,11 +134,14 @@ body{
     font-size: 2.8vw;
     margin-top: 2vw; 
     margin-bottom: 0%;  
+    text-shadow: 1px 1px 1px #474747;
+    font-weight: bold;
 }
 .skills_heading_skill{
     color: #e05b49;
     font-size: 1.7vw;
     margin-top: 1.5vw; 
+    font-weight: bold;
 }
 .skills_content{
     color: #fa945a;
@@ -136,6 +157,7 @@ body{
     text-align: center;
     color: #e05b49;
     font-size: 2.3vw;
+    font-weight: bold;
 }
 #projects{
     display: flex;
@@ -209,11 +231,11 @@ body{
       overflow: hidden;
       transform: translateY(-50%);    
   }
-  .anim-typewriter{
-    animation: typewriter 2s steps(21) 1s 1 normal both,
+  .anim-type{
+    animation: type 2s steps(21) 1s 1 normal both,
                blinkTextCursor 500ms steps(21) infinite normal;
   }
-  @keyframes typewriter{
+  @keyframes type{
     from{width: 0;}
     to{width: 11em;}
   }
@@ -221,3 +243,32 @@ body{
     from{border-right-color:#e05b49}
     to {border-right-color: transparent;}
   }
+  .anim-typewriter{
+    animation: typewriter 2s steps(21) 1s 1 normal both,
+               blinkTextCursor 500ms steps(21) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 17.4em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color:#e05b49}
+    to {border-right-color: transparent;}
+  }
+.welcome{
+  display: flex;
+  justify-content: center;
+  margin-top: 14vw;
+}
+.color_2{
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 3vw;
+}
+.color_1{
+    color: black;
+    text-shadow: 2px 2px 2px rgb(144, 144, 144);
+    font-weight: bold;
+    font-size: 3vw;
+}
