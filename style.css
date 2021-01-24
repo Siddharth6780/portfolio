@@ -30,7 +30,7 @@ body{
     animation: none;
 } */
 #first_screen{
-    background: url(background.jpg) no-repeat center;
+    background: url(images/background.jpg) no-repeat center;
     /* height: 100vh; */
     background-size: 100% 50vw;
     height: 50vw;
