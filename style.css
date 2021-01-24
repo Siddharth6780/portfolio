@@ -1,7 +1,7 @@
 body{
     background-color: #363636;
     font-family: monospace, "Courier New", Consolas;
-    margin: 0%;
+    margin: 0 auto;
     padding: 0%;
     letter-spacing: 0.1rem;
     overflow-x: hidden;
@@ -21,6 +21,12 @@ body{
     margin-left: 0.1rem;
     animation: blink 1s infinite;
 }
+.protfolio_welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vw;
+}
 @keyframes blink{
     0%{background-color: #e05b49;}
     50%{background-color: transparent ;}
@@ -29,7 +35,7 @@ body{
 /* .cursor.typing{
     animation: none;
 } */
-#first_screen{
+.first_screen{
     background: url(images/background.jpg) no-repeat center;
     /* height: 100vh; */
     background-size: 100% 50vw;
@@ -249,7 +255,19 @@ body{
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 17.4em;}
+    to{width: 11em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color:#e05b49}
+    to {border-right-color: transparent;}
+  }
+  .anim-typewriter2{
+    animation: typewriter2 2s steps(21) 1s 1 normal both,
+               blinkTextCursor 500ms steps(21) infinite normal;
+  }
+  @keyframes typewriter2{
+    from{width: 0;}
+    to{width: 17.6em;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color:#e05b49}
