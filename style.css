@@ -3,15 +3,12 @@ body{
     font-family: monospace, "Courier New", Consolas;
     margin: 0 auto;
     padding: 0%;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1px;
     overflow-x: hidden;
-}
-html{
-    font-size: 1vw;
 }
 #navbar{
    width: 100%;
-   height: 4rem;
+   height: 40px;
    display: flex;
    background-color:transparent;
    text-align: center;
@@ -19,16 +16,16 @@ html{
 }
 .cursor{
     display: inline-block;
-    width: 0.3rem;
+    width: 3px;
     background-color: #fa945a;
-    margin-left: 0.1rem;
+    margin-left: 1px;
     animation: blink 1s infinite;
 }
 .protfolio_welcome{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45rem;
+    height: 450px;
 }
 @keyframes blink{
     0%{background-color: #e05b49;}
@@ -41,44 +38,55 @@ html{
 .first_screen{
     background: url(images/background.jpg) no-repeat center;
     /* height: 100vh; */
-    background-size: 100% 50rem;
-    height: 50rem;
+    background-size: 100% 500px;
+    height: 500px;
     width: 100%;
     display: inline-block;
 }
 .navbar_container{
-    margin-top: 0.3rem;
+    margin-top: 3px;
     display: flex;
-    margin-left: 0.5rem;
+    margin-left: 5px;
     /* background-color: rgb(42, 42, 42); */
     opacity: 0.8;
     width: 100%;
 }
 .background_image{
     width: 100%;
-    height: 55rem;
-  position: relative;
-  text-align: center;
-  color: white;
+    height: 550px;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 .logo img{
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
-    margin-top: 0.5rem;
+    margin-top: 5px;
+}
+@media(max-width:768px){
+    .logo img{
+        height: 50px;
+        width: 50px;
+    }
 }
 .list_items{
     display: flex;
     list-style-type: none;
     color:whitesmoke;
-    text-shadow: 2px 2px 2px rgb(39, 39, 39);
+    text-shadow: 20px 20px 20px rgb(39, 39, 39);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 15px;
+}
+@media(max-width:768px){
+    .list_items{
+        font-size: 22px;
+    }
 }
 .list_items a{
-    margin-left: 1.5rem;
-    padding: 1rem;
-    border-radius: 2.1rem;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 21px;
     color:white;
     text-decoration: none;
 }
@@ -90,8 +98,8 @@ html{
     justify-content: center;
     margin: auto;
     text-align: center;
-    width: 15rem;
-    height: 15rem;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 .greet{
@@ -99,74 +107,114 @@ html{
     justify-content: center;
 }
 .content{
-    margin-top: 0.7rem;
+    margin-top: 7px;
     text-align: center;
     color:  #fa945a;
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 .intrest{
     text-align: center;
     color:  #fa945a;
-    font-size: 1.7rem;
+    font-size: 17px;
+}
+@media(max-width:768px){
+    .line-1{
+        font-size: 35px;
+    }
+}
+@media(max-width:768px){
+    .intrest{
+        font-size: 25px;
+    }
 }
 #education{
-    margin-top: 1.5rem;
-    height: 53rem;
+    margin-top: 15px;
+    height: 530px;
     background-color: #222222;
+}
+@media(max-width:768px){
+    #education{
+        height: 700px;
+    }
 }
 .education_heading{
     text-align: center;
     color: #e05b49;
-    font-size: 2.8rem;
-    margin-top: 1.6rem;
+    font-size: 28px;
+    margin-top: 16px;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #474747;
+    text-shadow: 10px 10px 10px #474747;
+}
+@media(max-width:768px){
+    .education_heading{
+        font-size: 42px;
+    }
 }
 .collage{
     text-align: center;
     color: #e05b49;
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 .school{
     text-align: center;
     color: #e05b49;
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 .skills_container{
-    margin-top: 0rem;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
 .skills_heading{
     text-align: center;
     color: #e05b49;
-    font-size: 2.8rem;
-    margin-top: 2rem; 
+    font-size: 28px;
+    margin-top: 20px; 
     margin-bottom: 0%;  
     text-shadow: 1px 1px 1px #474747;
     font-weight: bold;
 }
+@media(max-width:768px){
+    .skills_heading{
+        font-size: 42px;
+    }
+}
 .skills_heading_skill{
     color: #e05b49;
-    font-size: 1.7rem;
-    margin-top: 1.5rem; 
+    font-size: 17px;
+    margin-top: 15px; 
     font-weight: bold;
 }
 .skills_content{
     color: #fa945a;
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 .container_para{
     text-align: center;
     color: #e05b49;
-    font-size: 3rem;
-    margin-top: 3rem;
+    font-size: 30px;
+    margin-top: 30px;
+}
+@media(max-width:768px){
+    .container_para{
+        font-size: 46px;
+    }
 }
 .project_name{
     text-align: center;
     color: #e05b49;
-    font-size: 2.3rem;
+    font-size: 23px;
     font-weight: bold;
+}
+@media(max-width:768px){
+    .project_name{
+        font-size: 35px;
+    }
+}
+@media(max-width:768px){
+    .helloWorld{
+        font-size: 25px;
+    }
 }
 #projects{
     display: flex;
@@ -178,20 +226,25 @@ html{
     display: block;
 }
 .project_content{
-    width: 42rem;
-    margin-left: 3rem;
-    height: 26rem;
+    width: 420px;
+    margin-left: 30px;
+    height: 260px;
     border-radius: 2%;
-    padding: 1rem;
-    border: 0.5rem solid rgb(90, 90, 90);
+    padding: 10px;
+    border: 5px solid rgb(90, 90, 90);
     background-color: #222222;
 }
 .project_name_content{
     color: #fa945a;
-    font-size: 1.7rem;   
+    font-size: 17px;   
+}
+@media(max-width:768px){
+    .project_name_content,.collage,.school,.skills_heading_skill,.skills_heading,.skills_content{
+        font-size: 25px;
+    }
 }
 #footer{
-    height: 18rem;
+    height: 180px;
     background-color: #222222;
 }
 .sociallinks{
@@ -201,20 +254,20 @@ html{
 }
 .sociallinks a{
     text-decoration: none;
-    margin: 2rem;
+    margin: 20px;
 }
 .container{
     margin-top: 0%;
 }
 .fa {
-    padding: 1.6rem;
-    font-size: 1.6rem;
+    padding: 16px;
+    font-size: 16px;
     border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
+    height: 10px;
+    width: 10px;
     text-align: center;
     text-decoration: none;
-    margin: 0.3rem 0.1rem;
+    margin: 3px 1px;
   }
   .fa-facebook {
     background: #3B5998;
@@ -234,8 +287,8 @@ html{
   }
   .line-1{
       color:  #e05b49;
-      border-right: 0.1rem solid #e05b49;
-      font-size: 2.5rem;
+      border-right: 1px solid #e05b49;
+      font-size: 25px;
       white-space: nowrap;
       overflow: hidden;
       transform: translateY(-50%);    
@@ -279,17 +332,40 @@ html{
 .welcome{
   display: flex;
   justify-content: center;
-  margin-top: 14rem;
+  margin-top: 140px;
 }
 .color_2{
     color:whitesmoke;
-    text-shadow: 2px 2px 2px rgb(39, 39, 39);
+    text-shadow: 20px 20px 20px rgb(39, 39, 39);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 30px;
 }
 .color_1{
     color: black;
     text-shadow: 2px 2px 2px rgb(144, 144, 144);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 30px;
+}
+
+@media(max-width:768px){
+    body{
+        font-size: 10px;
+    }
+    #projects{
+        margin: 0%;
+        align-items: center;
+        display: inline-block;
+    }
+    .content{
+        font-size: 25px;
+    }
+    .project_content{
+        width:90%;
+        margin:20px;
+        height: 320px;
+        border-radius: 2%;
+        padding: 2px;
+        border: 5px solid rgb(90, 90, 90);
+        background-color: #222222;
+    }
 }
