@@ -127,7 +127,6 @@ a{
     justify-content: center;
 }
 .content{
-    margin-top: 7px;
     text-align: center;
     color:  #fa945a;
     font-size: 25px;
@@ -233,7 +232,7 @@ a{
 }
 @media(max-width:768px){
     .helloWorld{
-        font-size: 23px;
+        font-size: 22px;
     }
 }
 #projects{
