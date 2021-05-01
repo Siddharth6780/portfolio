@@ -1,5 +1,5 @@
 body{
-    background-color: #363636;
+    background-color: #151515;
     font-family: monospace, "Courier New", Consolas;
     margin: 0 auto;
     padding: 0%;
@@ -15,7 +15,7 @@ body{
 .cursor{
     display: inline-block;
     width: 3px;
-    background-color: #fa945a;
+    background-color: #151515;
     margin-left: 1px;
     animation: blink 1s infinite;
 }
@@ -23,21 +23,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70%;
 }
 @keyframes blink{
     0%{background-color: #e05b49;}
     50%{background-color: transparent ;}
     100%{background-color: #e05b49;}
 }
-/* .cursor.typing{
-    animation: none;
-} */
 .first_screen{
     background: url(images/background.jpg) no-repeat center;
-    /* height: 100vh; */
     background-size: 100% 800px;
-    height: 620px;
+    height: 705px;
     width: 100%;
     display: inline-block;
 }
